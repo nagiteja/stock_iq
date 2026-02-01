@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: #f5f7fb;
+  color: #1f2430;
+}
+
+.page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px 60px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 2.5rem;
+}
+
+.header p {
+  margin: 0;
+  color: #5a6272;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(15, 20, 30, 0.08);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d7ddea;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #3b6bf1;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.loading {
+  margin-top: 16px;
+  color: #3b6bf1;
+  font-weight: 600;
+}
+
+.error {
+  margin-top: 16px;
+  color: #c0392b;
+  font-weight: 600;
+}
+
+.report {
+  margin-top: 24px;
+  line-height: 1.6;
+}
+
+.scorecard {
+  background: #f7f9ff;
+  border: 1px solid #dfe6fb;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.scorecard h2 {
+  margin: 0 0 12px;
+}
+
+.scorecard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.scorecard-grid .label {
+  display: block;
+  font-size: 0.8rem;
+  color: #5a6272;
+  margin-bottom: 4px;
+}
+
+.scorecard-grid .value {
+  font-weight: 600;
+}
+
+.scorecard-note {
+  margin: 12px 0 0;
+  color: #2f3542;
+}
+
+.report table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 0.95rem;
+}
+
+.report th,
+.report td {
+  border: 1px solid #e3e7f0;
+  padding: 8px;
+  text-align: left;
+}
+
+.report th {
+  background: #f0f3fa;
+}

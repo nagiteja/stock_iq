@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-dotenv
+requests
+pandas
+numpy
+google-adk
+google-genai
+urllib3<2
